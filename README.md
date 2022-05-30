@@ -1,6 +1,6 @@
-#0x00. Python - Hello, World
+#ALX-High_Level_Programming
 ---
 **Concepts**
 
-*For this project, we are expected you to look at this concept:*
-- [Python Programming](https://alx-intranet.hbtn.io/concepts/550)
+*Key Concept:*
+- High-Level Programming
