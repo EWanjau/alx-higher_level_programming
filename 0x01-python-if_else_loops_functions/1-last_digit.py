@@ -4,6 +4,7 @@ number = random.randint(-10000, 10000)
 # YOUR CODE HERE
 if (number < 0):
     lastDigit = (-number) % 10
+    lastDigit = -lastDigit
 else:
     lastDigit = number % 10
 if(lastDigit > 5):
