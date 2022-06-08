@@ -3,7 +3,7 @@
 **Concepts**
 **Data Structures**
 ---
-**Key Concept:
+**Key Concept:**
 ---
--**Set**
--**Dictionary** 
+-Set
+-Dictionary
