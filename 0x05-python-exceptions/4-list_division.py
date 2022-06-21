@@ -9,7 +9,7 @@ def list_division(my_list_1, my_list_2, list_length):
     return: new list of result
     """
     result = []
-
+    i = 0
     while i < list_length:
         div = 0
         try:
