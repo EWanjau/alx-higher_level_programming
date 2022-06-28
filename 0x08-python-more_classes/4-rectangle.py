@@ -11,12 +11,12 @@ class Rectangle():
 
     def __str__(self):
         """print the rectangle with a '#' character"""
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.height == 0:
             return ""
 
         str_space = ''
-        for col in range(self.__height):
-            for row in range(self.__width):
+        for col in range(self.height):
+            for row in range(self.width):
                 str_space += "#"
             str_space += '\n'
         return str_space[:-1]
@@ -37,7 +37,8 @@ class Rectangle():
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self.__width = value
+        else:
+            self.__width = value
 
     @property
     def height(self):
