@@ -56,8 +56,14 @@ class Rectangle():
             for row in range(self.__height):
                 print("#")
 
-    def str(self):
-        """print the rectangle with a character"""
-        for col in range(self.__width):
-            for row in range(self.__height):
-                print("#")
+    def __str__(self):
+        """print the rectangle with a '#' character"""
+        if self.__width == 0 or self.__height == 0:
+            return ""
+
+        str_space = ''
+        for col in range(self.__height):
+            for row in range(self.__width):
+                str_space += "#"
+            str_space += '\n'
+        return str_space
