@@ -66,4 +66,4 @@ class Rectangle():
             for row in range(self.__width):
                 str_space += "#"
             str_space += '\n'
-        return str_space
+        return str_space[:-1]
