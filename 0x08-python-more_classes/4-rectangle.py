@@ -65,9 +65,3 @@ class Rectangle():
         else:
             _perimeter = 2 * (self.__height + self.__width)
         return _perimeter
-
-    def print(self):
-        """print the rectangle with a character"""
-        for col in range(self.__width):
-            for row in range(self.__height):
-                print("#")
