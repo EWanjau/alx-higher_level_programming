@@ -5,7 +5,7 @@
 class Rectangle():
     """the class defines width and height of rectangle"""
     number_of_instances = 0
-    print_symbol = '#'
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """the initialization of an instance of rectangle"""
@@ -26,7 +26,7 @@ class Rectangle():
         str_space = ""
         for col in range(self.height):
             for row in range(self.width):
-                str_space += "#"
+                str_space += str(self.print_symbol)
             str_space += '\n'
         return str_space[:-1]
 
