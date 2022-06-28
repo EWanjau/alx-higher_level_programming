@@ -9,6 +9,22 @@ class Rectangle():
         self.width = width
         self.height = height
 
+    def __str__(self):
+        """print the rectangle with a '#' character"""
+        if self.__width == 0 or self.__height == 0:
+            return ""
+
+        str_space = ''
+        for col in range(self.__height):
+            for row in range(self.__width):
+                str_space += "#"
+            str_space += '\n'
+        return str_space[:-1]
+
+    def __repr__(self):
+        """returns a striing representation of a rectangle"""
+        return "Rectangle ({}, {})".format(self.__width, self.__height)
+
     @property
     def width(self):
         """get the width is a private attribute"""
@@ -55,19 +71,3 @@ class Rectangle():
         for col in range(self.__width):
             for row in range(self.__height):
                 print("#")
-
-    def __str__(self):
-        """print the rectangle with a '#' character"""
-        if self.__width == 0 or self.__height == 0:
-            return ""
-
-        str_space = ''
-        for col in range(self.__height):
-            for row in range(self.__width):
-                str_space += "#"
-            str_space += '\n'
-        return str_space[:-1]
-
-    def __repr__(self):
-        """returns a striing representation of a rectangle"""
-        return "Rectangle ({}, {})".format(self.__width, self.__height)
