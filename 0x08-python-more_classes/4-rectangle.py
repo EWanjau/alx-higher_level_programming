@@ -14,7 +14,7 @@ class Rectangle():
         if self.width == 0 or self.height == 0:
             return ""
 
-        str_space = ''
+        str_space = ""
         for col in range(self.height):
             for row in range(self.width):
                 str_space += "#"
@@ -23,7 +23,7 @@ class Rectangle():
 
     def __repr__(self):
         """returns a striing representation of a rectangle"""
-        return "Rectangle ({}, {})".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
     @property
     def width(self):
