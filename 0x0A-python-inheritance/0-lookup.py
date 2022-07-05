@@ -2,6 +2,8 @@
 """Module 0-lookup
 find a ist of attributes and methods
 """
+
+
 def lookup(obj):
     """returns list of available atrributes and methods of an object
         
