@@ -4,9 +4,7 @@ writes an object to a text file in json format
 """
 
 
-from pickle import OBJ
-
-
+import json
 def save_to_json_file(my_obj, filename):
     """writes an object to a json file
 
@@ -18,7 +16,5 @@ def save_to_json_file(my_obj, filename):
     Write an object to a text file
     Use json representation
     """
-    import json
-    new_text = json.dumps(my_obj)
     with open(filename, 'w', encoding="utf-8") as f:
-        f.write(new_text)
+        json.dump(my_obj, f)
