@@ -12,5 +12,5 @@ def write_file(filename="", text=""):
         - text: the message to write
     """
 
-    with open(filename, 'w+', encoding="utf-8") as f:
-        return f.write(text)
+    with open(filename, mode='w', encoding="utf-8") as w:
+        return w.write(text)
