@@ -1,0 +1,38 @@
+The ``2-matrix_divided` module
+======================
+
+Using ``matrix_divided``
+-------------------
+
+First import the function:
+    """The function adds two integers and returns the result"""
+    >>> matrix_divided`= __import__('2-matrix_divided`').matrix_divided`
+
+
+Now use it:
+
+    >>> matrix_divided(-6, 0)
+    -6
+
+    >>> add_integer(3, 1)
+    4
+
+    >>> add_integer(3, -1)
+    2
+
+    >>> add_integer(-3, -1)
+    -4
+
+    >>> add_integer("work", 1)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer("mark", "say")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer(3.1, 4)
+    7
+
+    >>> add_integer(5.1, 4.5)
+    9
