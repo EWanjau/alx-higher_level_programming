@@ -5,8 +5,9 @@ Using ``add_integer``
 -------------------
 
 First import the function:
-
+    """The function adds two integers and returns the result"""
     >>> add_integer = __import__('0-add_integer').add_integer
+
 
 Now use it:
 
