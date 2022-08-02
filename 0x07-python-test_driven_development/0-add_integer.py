@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """ this module adds two numbers
 and tests the inputs
 """
