@@ -1,12 +1,12 @@
-The ``2-matrix_divided`` module
+The 2-matrix_divided module
 ======================
 
-Using ``matrix_divided``
+Using matrix_divided
 -------------------
 
 First import the function:
     """The function adds divides all elements of a matrix by a number specified"""
-    >>> matrix_divided = __import__('2-matrix_divided`').matrix_divided
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 
 Now use it:
