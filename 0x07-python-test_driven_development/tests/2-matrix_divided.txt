@@ -1,7 +1,7 @@
-The 2-matrix_divided module
+The ``2-matrix_divided`` module
 ======================
 
-Using matrix_divided
+Using ``matrix_divided``
 -------------------
 
 First import the function:
