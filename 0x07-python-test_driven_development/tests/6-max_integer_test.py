@@ -12,10 +12,10 @@ class TestMaxInteger(unittest.TestCase):
     """
     def test_max_integer(self):
         """test the function for edge cases, different inputs"""
-        self.assertEqual([1, 2, 3, 4], 4)
-        self.assertEqual([0, -1, -2, -6], 0)
-        self.assertEqual([2.0, 5.0, -1.0, 7.0], 7.0)
-        self.assertEqual([10], 10)
+        self.assertEqual(max_integer([1, 2, 3, 4]), 4)
+        self.assertEqual(max_integer([0, -1, -2, -6]), 0)
+        self.assertEqual(max_integer([2.0, 5.0, -1.0, 7.0]), 7.0)
+        self.assertEqual(max_integer([10]), 10)
 
     def test_null(self):
         """check for an empty list"""
