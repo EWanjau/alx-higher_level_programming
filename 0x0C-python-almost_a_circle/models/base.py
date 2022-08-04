@@ -3,10 +3,11 @@
 
 
 class Base:
-    """the attributes and methods 
+    """the attributes and methods
     defining the class
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """class constructor"""
         if id is not None:
