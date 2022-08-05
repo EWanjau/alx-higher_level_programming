@@ -80,9 +80,14 @@ class Rectangle(Base):
 
     def display(self):
         """prints in stdout the rectangle with #"""
-
-        for i in range(self.__height):
-            print('#' * self.__width)
+        for y in range(0, self.__y):
+            print()
+        for i in range(0, self.__height):
+            for x in range(0, self.__x):
+                print(" ", end="")
+            for j in range(0, self.__width):
+                print("#", end="")
+            print()
 
     def __str__(self):
         """print the objects of the class"""
