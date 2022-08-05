@@ -115,7 +115,7 @@ class Rectangle(Base):
                 if key == 'id':
                     if type(value) != int and args[0] is not None:
                         raise TypeError("id must be an integer")
-                self.id = value
+                    self.id = value
                 if key == 'width':
                     self.width = value
                 if key == 'height':
