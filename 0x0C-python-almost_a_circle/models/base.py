@@ -2,6 +2,9 @@
 """class that defines a Base"""
 
 
+import json
+
+
 class Base:
     """the attributes and methods
     defining the class
@@ -15,3 +18,10 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        """display json rep of all dictionaries"""
+        if list_dictionaries is None and len(list_dictionaries) == 0:
+            return f"[]"
+        else:
+            return json.dumps(list_dictionaries)
