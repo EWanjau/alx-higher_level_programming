@@ -6,6 +6,7 @@ import json
 import csv
 from unicodedata import name
 
+
 class Base:
     """the attributes and methods
     defining the class
@@ -42,4 +43,3 @@ class Base:
     #     """convert from json to another format"""
     #     if json_string is None:
     #         return []
-        
