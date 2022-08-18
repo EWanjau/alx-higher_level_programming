@@ -3,7 +3,8 @@
 
 
 import json
-
+import csv
+from unicodedata import name
 
 class Base:
     """the attributes and methods
@@ -25,3 +26,20 @@ class Base:
         if list_dictionaries is None and list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """writes json rep to a file"""
+        if list_objs is None:
+            name = "[]"
+        else:
+            name = cls.to_json_string([o.to_dictionary() for o in list_objs])
+        filename = cls.__name__ + ".json"
+        with open(filename, 'w') as f:
+            f.write(name)
+
+    # def from_json_string(json_string):
+    #     """convert from json to another format"""
+    #     if json_string is None:
+    #         return []
+        
