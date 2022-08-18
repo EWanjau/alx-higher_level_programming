@@ -23,7 +23,6 @@ class Base:
         """display json rep of all dictionaries"""
         if list_dictionaries is None and list_dictionaries == []:
             return "[]"
-        if (type(list_dictionaries) != list or
-           not all(type(x) == dict for x in list_dictionaries)):
-            raise TypeError("list_dictionaries must be a list of dictionaries")
+        if type(list_dictionaries) != list:
+            raise TypeError("list_dictionaries must have a list of dictionaries")
         return json.dumps(list_dictionaries)
