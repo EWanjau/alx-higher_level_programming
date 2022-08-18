@@ -3,8 +3,7 @@
 
 
 import json
-import csv
-from unicodedata import name
+import os
 
 
 class Base:
@@ -60,3 +59,19 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """returns a list of instances"""
+        if not cls:
+            return []
+        filename = cls.__name + ".json"
+        last = []
+        list_dict = []
+        if os.path.exists(filename):
+            with open(filename, 'r') as f:
+                s = f.read()
+                list_dict - cls.from_json_string(s)
+                for d in list_dict:
+                    last.append(cls.create(**d))
+        return last
