@@ -1,2 +1,2 @@
--- creates a table wsith two fields
-CREATE TABLE [IF NOT EXISTS] first_table (id INT, name VARCHAR(256));
+-- creates a table with two fields
+CREATE TABLE IF NOT EXISTS first_table (id INT, name VARCHAR(256))
