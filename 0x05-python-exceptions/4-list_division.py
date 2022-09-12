@@ -13,7 +13,8 @@ def list_division(my_list_1, my_list_2, list_length):
                 quotient of both lists
     """
     length = []
-    for val in range(0, list_length):
+    val = 0
+    while val < list_length:
         result = 0
         try:
             result = my_list_1[val] / my_list_2[val]
@@ -27,5 +28,6 @@ def list_division(my_list_1, my_list_2, list_length):
             result = 0
             print("out of range")
         finally:
+            val += 1
             length.append(result)
     return length
