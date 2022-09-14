@@ -3,10 +3,6 @@
 """
 
 
-from curses import setupterm
-from sys import settrace
-
-
 class Square():
     """defines an empty class and raises exception"""
     def __init__(self, size=0):
