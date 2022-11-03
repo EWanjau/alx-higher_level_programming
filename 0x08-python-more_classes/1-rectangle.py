@@ -28,7 +28,7 @@ class Rectangle():
         """retrieve height attribute"""
         return self.__height
 
-    @height.setter
+    @height.setterd
     def height(self, value):
         """set the value of the height ot a specified value"""
         if type(value) != int:
@@ -36,3 +36,5 @@ class Rectangle():
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    
