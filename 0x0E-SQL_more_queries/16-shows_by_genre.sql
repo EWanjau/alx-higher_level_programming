@@ -1,8 +1,10 @@
 --join three tables
 -- select from table 1 and 3
 
-SELECT title, tv_genres.name
-FROM tv_shows
-JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id
-JOIN tv_genres ON tv_genres.id = tv_show_genres.genre_id
-ORDER BY tv_shows.title, tv_genres.name ASC;
+SELECT t.`title`, g.`name`
+FROM `tv_shows` AS t
+LEFT JOIN `tv_show_genres` AS s
+ON t.`id` = s.`show_id`
+LEFT JOIN `tv_genres` AS g
+ON s.`genre_id` = g.`id`
+ORDER BY t.`title`, g.`name`;
