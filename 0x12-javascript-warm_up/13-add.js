@@ -1,7 +1,4 @@
 #!/usr/bin/node
-let sum;
-function add (a, b) {
-  sum = a + b;
-  return sum;
-}
-console.log(add());
+exports.add = function (a, b) {
+  return a + b;
+};
