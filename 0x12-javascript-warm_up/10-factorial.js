@@ -1,5 +1,4 @@
 #!/usr/bin/node
-// function calculates factorial
 function factorial (a) {
   a = parseInt(process.argv[2]);
   if (!a) {

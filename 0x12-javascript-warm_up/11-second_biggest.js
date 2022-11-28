@@ -1,5 +1,4 @@
 #!/usr/bin/node
-// function searches for 2nd biggest integer
 if (process.argv[2] == null) {
   console.log(0);
 } else if (process.argv.length == 3) {
