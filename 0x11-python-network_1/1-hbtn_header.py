@@ -5,6 +5,6 @@ from urllib import request
 from sys import argv
 
 if __name__ == "__main__":
-    with request.urlopen('https://alx-intranet.hbtn.io/status') as response:
+    with request.urlopen(argv[1]) as response:
         data = response.info()
     print(data.get('X-Request-Id'))
