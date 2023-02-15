@@ -10,7 +10,7 @@ request(url, function (error, response, body) {
     let counter = 0;
     for (const movies of JSON.parse(body).results) {
       for (const character of movies.characters) {
-        if (characters.slice(-3, -1) === '18') {
+        if (character.slice(-3, -1) === '18') {
           counter++;
         }
       }
