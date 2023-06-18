@@ -1,17 +1,10 @@
-# 0x0F. Python - Object-relational mapping
-The project aims at enabling the learner have an introduction of Object Relational Mappers in Python.
-
-## Concepts
-- OOP
-- SQL
-- MySQL
-- ORM
-- SQLAlchemy
-
-### Key Concept
+0x0F. Python - Object-relational mapping
 ---
-- Using ORM(s) to create, insert and delete data in relational databases in Python.
+**Concepts**
 
-### Author
----
-- Erasto Wanjau [EWanjau](wamwanjau@gmail.com)
+**Key Concept:**
+ - SQL
+ - MySQL
+ - OOP
+ - SQLAlchemy
+

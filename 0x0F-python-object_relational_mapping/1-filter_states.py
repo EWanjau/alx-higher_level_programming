@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-"""this module lists all records from a table fitting a certain criteria
+"""0-select_states connects using an ORM and manipulates
+the list to only required filters
 """
 
 
-from sys import argv
+import sys
 import MySQLdb
 
 if __name__ == "__main__":
-    """connects to the database and selects records from a table which start
-    with 'N'"""
-    db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
-    c = db.cursor()
-    c.execute("SELECT * FROM states\
-        WHERE upper(left(name,1))='N' ORDER BY `state.id` ASC")
-    [print(state) for state in c.fetchall()]
+    """connects to the database and selects records from a table"""
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
+    cur = db.cursor()
+    cur.execute("SELECT * FROM `states` ORDER BY `id` ASC")
+    [print(state) for state in cur.fetchall() if state[1][0] == 'N']
