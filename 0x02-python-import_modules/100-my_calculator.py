@@ -13,11 +13,11 @@ if __name__ == "__main__":
     b = int(sys.argv[3])
     if (sys.argv[2] is op[0]):
         print("{:d} {:s} {:d} = {:d}".format(a, op[0], b, add(a, b)))
-    elif(sys.argv[2] is op[1]):
+    elif (sys.argv[2] is op[1]):
         print("{:d} {:s} {:d} = {:d}".format(a, op[1], b, sub(a, b)))
-    elif(sys.argv[2] is op[2]):
+    elif (sys.argv[2] is op[2]):
         print("{:d} {:s} {:d} = {:d}".format(a, op[2], b, mul(a, b)))
-    elif(sys.argv[2] is op[3]):
+    elif (sys.argv[2] is op[3]):
         print("{:d} {:s} {:d} = {:d}".format(a, op[3], b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
