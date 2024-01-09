@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+""" module defines a class square
+"""
+
+
+class Square():
+    """defines an empty class and raises exception"""
+    def __init__(self, size=0):
+        """initializes the objects"""
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = size
+
+    def area(self):
+        """calculates the area of the square instances"""
+        return self.__size * self.__size
